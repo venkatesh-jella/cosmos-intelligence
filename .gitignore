@@ -1,0 +1,31 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Secrets / environment variables
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Large Cosmos datasets
+data/raw/
+data/processed/
+
+# Downloaded models / caches
+models/
+.cache/
+
+# Runtime logs
+logs/
+
+# Temporary files
+tmp/
