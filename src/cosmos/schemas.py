@@ -38,6 +38,24 @@ class Chunk:
     end_page: int | None
     token_count: int | None
     chunking_config_id: str
+@dataclass
+class GoldEvidence:
+    document_id: str
+    section_name: str
+    start_page: int | None
+    end_page: int | None
+    evidence_text: str
+@dataclass
+class EvaluationQuestion:
+    question_id: str
+    questionn: str
+    reference_answer: str
+    category: str
+    is_answerable: bool
+    gold_evidence: list[GoldEvidence]
+
+  
 
 
   
+
