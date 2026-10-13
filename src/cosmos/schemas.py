@@ -54,6 +54,14 @@ class EvaluationQuestion:
     is_answerable: bool
     gold_evidence: list[GoldEvidence]
 
+
+@dataclass
+class Figure:
+    figure_id: str
+    document_id: str
+    label: str
+    caption: str
+
   
 
 
