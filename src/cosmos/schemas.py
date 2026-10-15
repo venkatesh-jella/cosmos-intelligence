@@ -18,6 +18,8 @@ class Section:
     start_page: int | None
     end_page: int | None
     text: str
+    paragraphs: list[str]
+    
 @dataclass
 class ChunkingConfig:
     config_id: str
@@ -62,7 +64,17 @@ class Figure:
     label: str
     caption: str
 
-  
+
+
+
+
+
+
+
+
+
+
+
 
 
   
