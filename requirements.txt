@@ -1,0 +1,25 @@
+﻿
+# Cosmos Intelligence v1.0
+# Core dependencies
+
+# Local LLM inference
+torch
+transformers
+accelerate
+
+# Embeddings, reranking, and evidence verification
+sentence-transformers
+
+# Hybrid retrieval
+rank-bm25
+scikit-learn
+numpy
+
+# Scientific PDF ingestion
+pymupdf
+
+# Data processing
+pandas
+
+# Interactive frontend
+streamlit

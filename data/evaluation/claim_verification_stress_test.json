@@ -1,0 +1,123 @@
+
+[
+  {
+    "id": 1,
+    "claim": "JWST detected carbon dioxide in WASP-39b's atmosphere.",
+    "expected": "entailment",
+    "category": "supported_detection"
+  },
+  {
+    "id": 2,
+    "claim": "The carbon dioxide absorption feature was observed at 4.3 micrometres.",
+    "expected": "entailment",
+    "category": "supported_wavelength"
+  },
+  {
+    "id": 3,
+    "claim": "The carbon dioxide absorption feature had a significance of 26 sigma.",
+    "expected": "entailment",
+    "category": "supported_significance"
+  },
+  {
+    "id": 4,
+    "claim": "WASP-39b is a gas giant exoplanet.",
+    "expected": "entailment",
+    "category": "supported_planet_type"
+  },
+  {
+    "id": 5,
+    "claim": "The observations used the James Webb Space Telescope.",
+    "expected": "entailment",
+    "category": "supported_telescope"
+  },
+  {
+    "id": 6,
+    "claim": "The observations were part of the Early Release Science programme.",
+    "expected": "entailment",
+    "category": "supported_programme"
+  },
+  {
+    "id": 7,
+    "claim": "The observed spectral data covered wavelengths from 3.0 to 5.5 micrometres.",
+    "expected": "entailment",
+    "category": "supported_range"
+  },
+  {
+    "id": 8,
+    "claim": "JWST detected methane instead of carbon dioxide in WASP-39b.",
+    "expected": "not_entailment",
+    "category": "incorrect_molecule"
+  },
+  {
+    "id": 9,
+    "claim": "The carbon dioxide absorption feature was observed at 8.6 micrometres.",
+    "expected": "not_entailment",
+    "category": "incorrect_wavelength"
+  },
+  {
+    "id": 10,
+    "claim": "The carbon dioxide absorption feature had a significance of 2.6 sigma.",
+    "expected": "not_entailment",
+    "category": "incorrect_significance"
+  },
+  {
+    "id": 11,
+    "claim": "The carbon dioxide feature was detected in the atmosphere of Mars.",
+    "expected": "not_entailment",
+    "category": "incorrect_planet"
+  },
+  {
+    "id": 12,
+    "claim": "The observations were made using the Hubble Space Telescope rather than JWST.",
+    "expected": "not_entailment",
+    "category": "incorrect_telescope"
+  },
+  {
+    "id": 13,
+    "claim": "WASP-39b is a rocky terrestrial planet.",
+    "expected": "not_entailment",
+    "category": "incorrect_planet_type"
+  },
+  {
+    "id": 14,
+    "claim": "The observed wavelength range was 30 to 55 micrometres.",
+    "expected": "not_entailment",
+    "category": "incorrect_range"
+  },
+  {
+    "id": 15,
+    "claim": "WASP-39b has an atmospheric temperature of exactly 500 K.",
+    "expected": "not_entailment",
+    "category": "unsupported_temperature"
+  },
+  {
+    "id": 16,
+    "claim": "JWST detected oxygen produced by biological organisms on WASP-39b.",
+    "expected": "not_entailment",
+    "category": "unsupported_biosignature"
+  },
+  {
+    "id": 17,
+    "claim": "WASP-39b has a confirmed liquid-water ocean.",
+    "expected": "not_entailment",
+    "category": "unsupported_ocean"
+  },
+  {
+    "id": 18,
+    "claim": "The observations prove that WASP-39b supports intelligent life.",
+    "expected": "not_entailment",
+    "category": "unsupported_life"
+  },
+  {
+    "id": 19,
+    "claim": "JWST detected carbon dioxide in WASP-39b and confirmed that the planet is habitable.",
+    "expected": "not_entailment",
+    "category": "partially_supported"
+  },
+  {
+    "id": 20,
+    "claim": "The carbon dioxide feature was detected at 4.3 micrometres with 100-sigma significance.",
+    "expected": "not_entailment",
+    "category": "partially_incorrect_number"
+  }
+]

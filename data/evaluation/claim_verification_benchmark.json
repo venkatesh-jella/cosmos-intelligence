@@ -1,0 +1,38 @@
+
+[
+  {
+    "id": 1,
+    "claim": "JWST detected carbon dioxide in WASP-39b's atmosphere.",
+    "expected": "entailment"
+  },
+  {
+    "id": 2,
+    "claim": "The CO2 absorption feature was detected at 4.3 micrometres.",
+    "expected": "entailment"
+  },
+  {
+    "id": 3,
+    "claim": "The carbon dioxide absorption feature had a significance of 26 sigma.",
+    "expected": "entailment"
+  },
+  {
+    "id": 4,
+    "claim": "JWST detected methane instead of carbon dioxide in WASP-39b's atmosphere.",
+    "expected": "not_entailment"
+  },
+  {
+    "id": 5,
+    "claim": "WASP-39b has an atmospheric temperature of exactly 500 K.",
+    "expected": "not_entailment"
+  },
+  {
+    "id": 6,
+    "claim": "The observations covered wavelengths from 3.0 to 5.5 micrometres.",
+    "expected": "entailment"
+  },
+  {
+    "id": 7,
+    "claim": "The carbon dioxide absorption feature was observed at 8.6 micrometres.",
+    "expected": "not_entailment"
+  }
+]

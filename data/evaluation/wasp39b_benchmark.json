@@ -1,0 +1,79 @@
+﻿
+[
+  {
+    "question": "What molecule did JWST detect in WASP-39b's atmosphere?",
+    "answer": "Carbon dioxide (CO₂)",
+    "gold_chunk_ids": [
+      "wasp39b_co2_2022_abstract_paragraph_token_v1_chunk_001"
+    ]
+  },
+  {
+    "question": "At what wavelength did JWST observe the prominent CO₂ absorption feature in WASP-39b's atmosphere?",
+    "answer": "4.3 micrometres (µm)",
+    "gold_chunk_ids": [
+      "wasp39b_co2_2022_abstract_paragraph_token_v1_chunk_001"
+    ]
+  },
+  {
+    "question": "Which JWST instrument was used to observe WASP-39b on July 10, 2022?",
+    "answer": "Near Infrared Spectrograph (NIRSpec)",
+    "gold_chunk_ids": [
+      "wasp39b_co2_2022_main_paragraph_token_v1_chunk_004"
+    ]
+  },
+  {
+  "question": "How many separate data-reduction pipelines were used to analyze the JWST NIRSpec PRISM observations of WASP-39b?",
+  "answer": "Four separate pipelines",
+  "gold_chunk_ids": [
+    "wasp39b_co2_2022_methods_paragraph_token_v1_chunk_001"
+  ]
+},
+{
+  "question": "What pixel correlation value was assumed during covariance-weighted spectral extraction?",
+  "answer": "0.08",
+  "gold_chunk_ids": [
+    "wasp39b_co2_2022_methods_paragraph_token_v1_chunk_003"
+  ]
+},
+{
+  "question": "During the extraction of WASP-39b's spectrum, how wide was the region used to collect the source signal?",
+  "answer": "16 pixels",
+  "gold_chunk_ids": [
+    "wasp39b_co2_2022_methods_paragraph_token_v1_chunk_003"
+  ]
+},
+
+{
+  "question": "Why did the researchers use four separate data-reduction pipelines for the JWST observations of WASP-39b?",
+  "answer": "To verify that the scientific results did not depend on the specific data-reduction method used.",
+  "gold_chunk_ids": [
+    "wasp39b_co2_2022_methods_paragraph_token_v1_chunk_001"
+  ]
+},
+
+{
+  "question": "How far from the source, at minimum, was the background region placed during spectral extraction?",
+  "answer": "7 pixels on either side of the source",
+  "gold_chunk_ids": [
+    "wasp39b_co2_2022_methods_paragraph_token_v1_chunk_003"
+  ]
+},
+
+{
+  "question": "How many individual integrations did NIRSpec record during the 8.23-hour observation of WASP-39b?",
+  "answer": "21,500 integrations",
+  "gold_chunk_ids": [
+    "wasp39b_co2_2022_main_paragraph_token_v1_chunk_004"
+  ]
+},
+
+{
+  "question": "What wavelength range did JWST's NIRSpec PRISM instrument cover during the WASP-39b observations?",
+  "answer": "0.5–5.5 micrometres (µm)",
+  "gold_chunk_ids": [
+    "wasp39b_co2_2022_main_paragraph_token_v1_chunk_004"
+  ]
+}
+
+
+]

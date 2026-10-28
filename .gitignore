@@ -29,3 +29,5 @@ logs/
 
 # Temporary files
 tmp/
+# Local diagnostic output
+benchmark_diagnostics.txt
