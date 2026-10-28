@@ -6,6 +6,27 @@ Cosmos Intelligence is a locally running scientific research assistant built usi
 
 The project explores how hybrid information retrieval, cross-encoder reranking, and natural language inference can improve evidence-grounded scientific question answering.
 
+
+## Application Demo
+
+### 1. Ask a Scientific Question
+![Scientific Question](assets/01_Scientific_Question.png)
+
+### 2. AI-Generated Research Answer
+![Generated Answer](assets/02_Generated_Answer.png)
+
+### 3. Scientific Evidence and Citations
+
+The application retrieves relevant passages from published astronomy papers and displays the supporting sources.
+
+![Source 1](assets/03_Source_1.png)
+![Source 2](assets/04_Source_2.png)
+![Source 3](assets/05_Source_3.png)
+![Source 4](assets/06_Source_4.png)
+![Source 5](assets/07_Source_5.png)
+
+
+
 ## Features
 
 - **Multi-document research:** Search across JWST exoplanet research and Event Horizon Telescope black-hole observations.
