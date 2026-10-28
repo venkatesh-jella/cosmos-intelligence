@@ -130,7 +130,82 @@ These results reflect a small, curated, two-document benchmark. They should not 
 
 The project also includes experimental evidence-verification benchmarks and diagnostic scripts.
 
+
+### Claim-Verification Stress Test
+
+Evaluated the NLI-based evidence verification layer using 20 manually
+constructed claims about the WASP-39b research paper: 7 supported
+and 13 incorrect, unsupported, or partially true claims.
+
+The benchmark includes altered numerical values, incorrect molecules,
+fabricated biosignatures, and partially supported compound claims.
+
+| Verification Method | Accuracy | Precision | Recall | F1 |
+|---|---:|---:|---:|---:|
+| NLI on full passage | 90.0% | 100.0% | 71.4% | 83.3% |
+| NLI on top-1 selected sentence | 85.0% | 100.0% | 57.1% | 72.7% |
+| **Normalized top-3 hybrid (used in app)** | **100.0%** | **100.0%** | **100.0%** | **100.0%** |
+
+**Key finding:** Full-passage NLI missed some supported claims
+when the relevant evidence was buried in longer passages.
+The normalized top-3 hybrid approach recovered all 7 supported
+claims while rejecting all 13 unsupported claims in this test.
+
+**Reproduce the evaluation:**
+
+```bash
+python src/cosmos/stress_test_benchmark.py
+```
+
+**Limitations:** This is a small, manually constructed benchmark
+developed alongside the verification method. The results demonstrate
+performance on these 20 claims, not general-world accuracy or
+a guarantee of hallucination-free responses.
+
+
 ## Installation
+
+
+### Download Research Papers
+
+The original research papers are not included in this repository.
+
+Download and validate the source documents using:
+
+```bash
+python scripts/download_papers.py
+```
+
+This prepares:
+
+- `data/raw/papers/wasp39b_co2_2022/article.xml` — WASP-39b atmospheric CO₂ research article.
+- `data/raw/m87_eht_2019.pdf` — Event Horizon Telescope M87 black hole research paper.
+
+Sources:
+- WASP-39b: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9946830/fullTextXML
+- M87: https://arxiv.org/pdf/1906.11238
+
+The downloader preserves existing valid files.
+
+### Build the Research Index
+
+After preparing the papers, run:
+
+```bash
+python src/cosmos/ingest.py
+python src/cosmos/chunking.py
+python src/cosmos/embeddings.py
+python src/cosmos/ingest_pdf.py
+python src/cosmos/multi_paper_chunking.py
+python src/cosmos/multi_paper_embeddings.py
+```
+
+### Launch the Application
+
+```bash
+python -m streamlit run app.py
+```
+
 
 ### 1. Clone the repository
 
